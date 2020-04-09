@@ -81,7 +81,7 @@
             this.panelToolsSubMenu.Controls.Add(this.button14);
             this.panelToolsSubMenu.Controls.Add(this.button15);
             this.panelToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelToolsSubMenu.Location = new System.Drawing.Point(0, 653);
+            this.panelToolsSubMenu.Location = new System.Drawing.Point(0, 675);
             this.panelToolsSubMenu.Name = "panelToolsSubMenu";
             this.panelToolsSubMenu.Size = new System.Drawing.Size(233, 194);
             this.panelToolsSubMenu.TabIndex = 7;
@@ -165,7 +165,7 @@
             this.buttonTools.FlatAppearance.BorderSize = 0;
             this.buttonTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTools.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonTools.Location = new System.Drawing.Point(0, 608);
+            this.buttonTools.Location = new System.Drawing.Point(0, 630);
             this.buttonTools.Name = "buttonTools";
             this.buttonTools.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonTools.Size = new System.Drawing.Size(233, 45);
@@ -182,7 +182,7 @@
             this.buttonEqualizer.FlatAppearance.BorderSize = 0;
             this.buttonEqualizer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEqualizer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonEqualizer.Location = new System.Drawing.Point(0, 563);
+            this.buttonEqualizer.Location = new System.Drawing.Point(0, 585);
             this.buttonEqualizer.Name = "buttonEqualizer";
             this.buttonEqualizer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonEqualizer.Size = new System.Drawing.Size(233, 45);
@@ -200,7 +200,7 @@
             this.panelPlaylistSubMenu.Controls.Add(this.button8);
             this.panelPlaylistSubMenu.Controls.Add(this.button9);
             this.panelPlaylistSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPlaylistSubMenu.Location = new System.Drawing.Point(0, 375);
+            this.panelPlaylistSubMenu.Location = new System.Drawing.Point(0, 397);
             this.panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
             this.panelPlaylistSubMenu.Size = new System.Drawing.Size(233, 188);
             this.panelPlaylistSubMenu.TabIndex = 4;
@@ -284,7 +284,7 @@
             this.buttonPlaylist.FlatAppearance.BorderSize = 0;
             this.buttonPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlaylist.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPlaylist.Location = new System.Drawing.Point(0, 330);
+            this.buttonPlaylist.Location = new System.Drawing.Point(0, 352);
             this.buttonPlaylist.Name = "buttonPlaylist";
             this.buttonPlaylist.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonPlaylist.Size = new System.Drawing.Size(233, 45);
@@ -302,7 +302,7 @@
             this.panelMediaSubMenu.Controls.Add(this.button3);
             this.panelMediaSubMenu.Controls.Add(this.button2);
             this.panelMediaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 145);
+            this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 167);
             this.panelMediaSubMenu.Name = "panelMediaSubMenu";
             this.panelMediaSubMenu.Size = new System.Drawing.Size(233, 185);
             this.panelMediaSubMenu.TabIndex = 2;
@@ -386,7 +386,7 @@
             this.buttonMedia.FlatAppearance.BorderSize = 0;
             this.buttonMedia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMedia.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonMedia.Location = new System.Drawing.Point(0, 100);
+            this.buttonMedia.Location = new System.Drawing.Point(0, 122);
             this.buttonMedia.Name = "buttonMedia";
             this.buttonMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonMedia.Size = new System.Drawing.Size(233, 45);
@@ -398,10 +398,12 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.BackgroundImage = global::MenuUI.Properties.Resources.infotech;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(233, 100);
+            this.panelLogo.Size = new System.Drawing.Size(233, 122);
             this.panelLogo.TabIndex = 0;
             // 
             // Form1
