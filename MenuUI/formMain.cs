@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MenuUI
 {
-    public partial class Form1 : Form
+    public partial class formMain : Form
     {
-        public Form1()
+        public formMain()
         {
             InitializeComponent();
             customizeDesign();
@@ -53,7 +53,7 @@ namespace MenuUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Code goes here
+            openChildForm(new formChild());
             hideSubMenu();
         }
 
@@ -106,7 +106,7 @@ namespace MenuUI
 
         private void buttonEqualizer_Click(object sender, EventArgs e)
         {
-            // Code goes here
+            openChildForm(new formChild2());
             hideSubMenu();
         }
 
@@ -137,6 +137,23 @@ namespace MenuUI
         {
             // Code goes here
             hideSubMenu();
+        }
+
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

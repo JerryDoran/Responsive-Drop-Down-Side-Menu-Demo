@@ -1,6 +1,6 @@
 ﻿namespace MenuUI
 {
-    partial class Form1
+    partial class formMain
     {
         /// <summary>
         /// Required designer variable.
@@ -49,10 +49,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.buttonMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelUtillity = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
             this.panelMediaSubMenu.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -406,15 +411,47 @@
             this.panelLogo.Size = new System.Drawing.Size(233, 122);
             this.panelLogo.TabIndex = 0;
             // 
-            // Form1
+            // panelUtillity
+            // 
+            this.panelUtillity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.panelUtillity.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelUtillity.Location = new System.Drawing.Point(250, 561);
+            this.panelUtillity.Name = "panelUtillity";
+            this.panelUtillity.Size = new System.Drawing.Size(684, 0);
+            this.panelUtillity.TabIndex = 1;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(684, 561);
+            this.panelChildForm.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImage = global::MenuUI.Properties.Resources.infotech;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(160, 146);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(355, 256);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // formMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.panelUtillity);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Form1";
+            this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelSideMenu.ResumeLayout(false);
@@ -422,6 +459,8 @@
             this.panelToolsSubMenu.ResumeLayout(false);
             this.panelPlaylistSubMenu.ResumeLayout(false);
             this.panelMediaSubMenu.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,6 +488,9 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button buttonPlaylist;
+        private System.Windows.Forms.Panel panelUtillity;
+        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
